@@ -1,0 +1,69 @@
+#google-tracer-container {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  z-index: 1000;
+  width: 5em;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+#google-tracer-container #container-list{
+  height: 20em;
+  overflow-y: scroll;
+}
+
+#google-tracer-container.collapsed #container-list{
+  height: 0em;
+}
+
+#google-tracer-container #container-menu{
+  position: relative;
+  text-align: center;
+}
+#google-tracer-container #container-menu a{
+  font-size: 1.5em;
+  color: #3498db;
+  text-decoration: none;
+  display: inline-block;
+  width: 49%;
+}
+
+#google-tracer-container #container-list{
+  height: 20em;
+  overflow-y: scroll;
+}
+
+
+#google-tracer-container .request .request-info{
+  background-color: #ecf0f1;
+  color: #2c3e50;
+  position: absolute;
+  height: 1em;
+  left: 5em;
+  top: 0;
+  text-align: left;
+  padding: 1em;
+  overflow: hidden;
+  display: none;
+  white-space: nowrap;
+}
+
+#google-tracer-container .request.active .request-info{
+  display: block;
+}
+
+#google-tracer-container.collapsed .request-info{
+  height: 0em;
+  width: 0em;
+  padding: 0em;
+  overflow: hidden;
+}
+
+#google-tracer-container .request{
+  background-color: #3498db;
+  padding: 0.5em;
+}
+
+#google-tracer-container .request-fail{ background-color: #e74c3c; }
+#google-tracer-container .request-close{ background-color: #2ecc71; }

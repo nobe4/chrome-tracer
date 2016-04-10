@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+
+  "name": "chrome tracer",
+  "description": "Open network tab no more",
+  "author": "Victor 'nobe4' Haffreingue",
+  "homepage_url": "https://github.com/nobe4/chrome-tracer",
+  "version": "0.0.1",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+
+  "background": {
+    "scripts": ["eventPage.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["mystyle.css"],
+      "js": [ "myscript.js"]
+    }
+  ],
+  "permissions": [
+    "webRequest",
+    "<all_urls>"
+  ]
+}
